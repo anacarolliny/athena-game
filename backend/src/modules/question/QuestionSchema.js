@@ -2,6 +2,7 @@ import { Schema, model } from 'mongoose'
 
 const Question = new Schema(
   {
+    
     question: {
       type: String,
       required: true
@@ -10,7 +11,7 @@ const Question = new Schema(
       options: [Number],
       correct: Number
     },
-    allowed: { type: Boolean, default: false }
+    // allowed: { type: Boolean, default: false }
   },
   { timestamps: true }
 )
